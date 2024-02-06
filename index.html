@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stock Calculator</h1>
+        <form id="stockForm">
+            <label for="amount">Available Amount:</label>
+            <input type="number" id="amount" name="amount" step="any" required>
+
+            <label for="stockType">Select Stock:</label>
+            <select id="stockType" name="stockType" required>
+                <option value="nifty">NIFTY</option>
+                <option value="banknifty">BANKNIFTY</option>
+                <option value="finnifty">FINNIFTY</option>
+                <option value="custom">Custom Stock</option>
+            </select>
+
+            <label for="currentPrice">Current Price:</label>
+            <input type="number" id="currentPrice" name="currentPrice" step="any" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
